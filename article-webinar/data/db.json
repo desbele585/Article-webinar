@@ -1,0 +1,28 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "Create Tigray Flag",
+      "details": "The Tigray flag is becoming femous all over the  the world.",
+      "complete": true
+    },
+    {
+      "title": "Ethtiopian Politics",
+      "details": "world's frist ugly politics is ethiopian politics",
+      "complete": false,
+      "id": 2
+    },
+    {
+      "title": "Ronja's Birth-Day",
+      "details": "Ronja's birth-day is celebrated every year in the first of June month",
+      "complete": false,
+      "id": 3
+    },
+    {
+      "title": "Sonja's Birth-Place",
+      "details": "Sonja was born in Karolinska Hospital in the 8th of March .",
+      "complete": false,
+      "id": 4
+    }
+  ]
+}
