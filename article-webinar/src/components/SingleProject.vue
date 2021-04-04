@@ -1,10 +1,14 @@
 <template>
-  <div class="project">
+  <div class="project" :class="{complete:project.complete}">
      <div class="actions"> 
+      
         <h3 @click="showDetail=!showDetail">{{project.title}}</h3> 
         <div class="icons">
+            <router-link :to="{name:'EditProject', params:{id:project.id}}">
+            <span class="material-icons">edit</span>
+            </router-link>
             <span class="material-icons delete" @click="deleteProject">delete</span>
-             <span class="material-icons tick">done</span>
+             <span class="material-icons tick" @click="handleComplete">done</span>
         </div> 
      </div>
      <div class="details" v-if="showDetail">
@@ -27,13 +31,23 @@ export default {
            fetch(this.url,{method:'DELETE'})
              .then(()=> this.$emit('delete', this.project.id))
             .catch(err=>console.log(err.message))
+       },
+       handleComplete(){
+           fetch(this.url,{
+               method:'PATCH',
+               headers:{'Content-Type':'application/json'},
+               body:JSON.stringify({complete:!this.project.complete})
+           })
+           .then(()=>{
+               this.$emit('complete',this.project.id)
+           })
        }
    }
 
 }
 </script>
 
-<style>
+<style scoped>
 .project{
     width: 100%;
     height:  100%;
@@ -61,4 +75,13 @@ h3{
 .material-icons:hover{
     color: #777;
 }
-</style>
+.project.complete{
+    border-left: 4px solid #00ce89;
+}
+.project.complete .tick{
+    color: #00ce89;
+}
+.delete{
+    color: red;
+}
+</style>>
