@@ -1,24 +1,6 @@
 {
   "projects": [
     {
-      "title": "Meles's Family",
-      "details": "They are all Tigrians and Live in Tigray",
-      "complete": false,
-      "id": 2
-    },
-    {
-      "title": "Ronja's Birth-Day",
-      "details": "Ronja's birth-day is celebrated every year in the first of June month",
-      "complete": true,
-      "id": 3
-    },
-    {
-      "title": "Sonja's Birth-Place",
-      "details": "Sonja was born in Karolinska Hospital in the 8th of March .",
-      "complete": true,
-      "id": 4
-    },
-    {
       "title": "Tigray Genocide",
       "details": "Tigray Genocide is performed by Abiy and Isayas.",
       "complete": true,
@@ -29,6 +11,24 @@
       "details": "President has done nothing when it comes to the Tigray genocide apart condemning it.",
       "complete": false,
       "id": 6
+    },
+    {
+      "title": "ጅምላዊ ኪትለት መናእሰይ ትግራይ ቢወራሪ ሰራዊት ኢሬትራ",
+      "details": "አብአለም ተራኢዩ ዘይፈልጥ ናይ ኩናት ገበን እዩ አብ ትግራይ ተፈጽሙ ዘሎ",
+      "complete": false,
+      "id": 7
+    },
+    {
+      "title": "The end of Ethiopia.",
+      "details": "abiy ahmed is the last king of ethiopia. ",
+      "complete": false,
+      "id": 8
+    },
+    {
+      "title": "The role of Tigray in stabilizing the horn of Africa",
+      "details": "Tigray will be one of the most influential  country in the horn of Africa",
+      "complete": false,
+      "id": 9
     }
   ]
 }
